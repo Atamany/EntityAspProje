@@ -23,7 +23,7 @@
                 <li><a href="Kategoriler.aspx">Kategoriler</a></li>
                 <li><a href="Urunler.aspx">Ürünler</a></li>
                 <li><a href="Personeller.aspx">Personeller</a></li>
-                <li><a href="#">Satışlar</a></li>
+                <li><a href="Satislar.aspx">Satışlar</a></li>
                 <li><a href="#">Ayarlar</a></li>
                 <li><a href="#">Kullanıcı Paneli</a></li>
                 <li><a href="#">Ürün Paneli</a></li>

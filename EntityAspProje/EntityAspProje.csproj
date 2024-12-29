@@ -97,6 +97,8 @@
     <Content Include="PersonelGuncelle.aspx" />
     <Content Include="Personeller.aspx" />
     <Content Include="PersonelSil.aspx" />
+    <Content Include="SatisEkle.aspx" />
+    <Content Include="Satislar.aspx" />
     <Content Include="UrunEkle.aspx" />
     <Content Include="UrunGuncelle.aspx" />
     <Content Include="Urunler.aspx" />
@@ -226,6 +228,20 @@
       <DependentUpon>PersonelSil.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SatisEkle.aspx.cs">
+      <DependentUpon>SatisEkle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SatisEkle.aspx.designer.cs">
+      <DependentUpon>SatisEkle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Satislar.aspx.cs">
+      <DependentUpon>Satislar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Satislar.aspx.designer.cs">
+      <DependentUpon>Satislar.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UrunEkle.aspx.cs">
       <DependentUpon>UrunEkle.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

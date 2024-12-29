@@ -19,7 +19,6 @@ namespace EntityAspProje.Entity
         public Nullable<byte> Personel { get; set; }
         public Nullable<int> Musteri { get; set; }
         public Nullable<decimal> Fiyat { get; set; }
-        public Nullable<bool> Durum { get; set; }
     
         public virtual Tbl_Musteri Tbl_Musteri { get; set; }
         public virtual Tbl_Personel Tbl_Personel { get; set; }

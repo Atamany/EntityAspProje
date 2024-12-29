@@ -75,7 +75,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Entity\KategoriEkle.aspx" />
     <Content Include="Entity\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Model1.Context.cs</LastGenOutput>
@@ -86,7 +85,10 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <Content Include="KategoriEkle.aspx" />
+    <Content Include="KategoriGuncelle.aspx" />
     <Content Include="Kategoriler.aspx" />
+    <Content Include="KategoriSil.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -96,13 +98,6 @@
     </Compile>
     <Compile Include="Admin.Master.designer.cs">
       <DependentUpon>Admin.Master</DependentUpon>
-    </Compile>
-    <Compile Include="Entity\KategoriEkle.aspx.cs">
-      <DependentUpon>KategoriEkle.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Entity\KategoriEkle.aspx.designer.cs">
-      <DependentUpon>KategoriEkle.aspx</DependentUpon>
     </Compile>
     <Compile Include="Entity\Model1.Context.cs">
       <AutoGen>True</AutoGen>
@@ -134,12 +129,33 @@
     <Compile Include="Entity\Tbl_Urunler.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="KategoriEkle.aspx.cs">
+      <DependentUpon>KategoriEkle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KategoriEkle.aspx.designer.cs">
+      <DependentUpon>KategoriEkle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KategoriGuncelle.aspx.cs">
+      <DependentUpon>KategoriGuncelle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KategoriGuncelle.aspx.designer.cs">
+      <DependentUpon>KategoriGuncelle.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Kategoriler.aspx.cs">
       <DependentUpon>Kategoriler.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Kategoriler.aspx.designer.cs">
       <DependentUpon>Kategoriler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KategoriSil.aspx.cs">
+      <DependentUpon>KategoriSil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KategoriSil.aspx.designer.cs">
+      <DependentUpon>KategoriSil.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

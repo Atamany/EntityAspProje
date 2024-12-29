@@ -15,8 +15,8 @@
                     <td><%#Eval("KategoriId") %></td>
                     <td><%#Eval("KategoriAd") %></td>
                     <td>
-                        <asp:HyperLink ID="HyperLink1" runat="server" CssClass="btn btn-warning">Güncelle</asp:HyperLink>
-                        <asp:HyperLink ID="HyperLink2" runat="server" CssClass="btn btn-danger">Sil</asp:HyperLink>
+                        <asp:HyperLink NavigateUrl='<%#"~/KategoriGuncelle.aspx?KategoriId=" + Eval("KategoriId") %>' ID="HyperLink1" runat="server" CssClass="btn btn-warning">Güncelle</asp:HyperLink>
+                        <asp:HyperLink NavigateUrl='<%# string.Format("~/KategoriSil.aspx?KategoriId={0}", Eval("KategoriId")) %>' ID="HyperLink2" runat="server" CssClass="btn btn-danger">Sil</asp:HyperLink>
                     </td>
                 </tr>
             </ItemTemplate>

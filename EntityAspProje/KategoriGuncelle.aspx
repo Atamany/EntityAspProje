@@ -15,7 +15,7 @@
         <br />
 
         <div>
-            <asp:Button ID="Button1" runat="server" Text="Kategori Güncelle" CssClass="btn btn-default" OnClick="Button1_Click" />
+            <asp:Button ID="Button1" runat="server" Text="Güncelle" CssClass="btn btn-default" OnClick="Button1_Click" />
         </div>
         <br />
     </form>

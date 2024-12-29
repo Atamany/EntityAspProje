@@ -19,7 +19,7 @@
                 <a class="navbar-brand" href="#">Entity Proje</a>
             </div>
             <ul class="nav navbar-nav">
-                <li><a href="#">Müşteriler</a></li>
+                <li><a href="Musteriler.aspx">Müşteriler</a></li>
                 <li><a href="Kategoriler.aspx">Kategoriler</a></li>
                 <li><a href="#">Ürünler</a></li>
                 <li><a href="#">Personeller</a></li>

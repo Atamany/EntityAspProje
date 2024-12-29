@@ -89,6 +89,10 @@
     <Content Include="KategoriGuncelle.aspx" />
     <Content Include="Kategoriler.aspx" />
     <Content Include="KategoriSil.aspx" />
+    <Content Include="MusteriEkle.aspx" />
+    <Content Include="MusteriGuncelle.aspx" />
+    <Content Include="Musteriler.aspx" />
+    <Content Include="MusteriSil.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -156,6 +160,34 @@
     </Compile>
     <Compile Include="KategoriSil.aspx.designer.cs">
       <DependentUpon>KategoriSil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriEkle.aspx.cs">
+      <DependentUpon>MusteriEkle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MusteriEkle.aspx.designer.cs">
+      <DependentUpon>MusteriEkle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriGuncelle.aspx.cs">
+      <DependentUpon>MusteriGuncelle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MusteriGuncelle.aspx.designer.cs">
+      <DependentUpon>MusteriGuncelle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Musteriler.aspx.cs">
+      <DependentUpon>Musteriler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Musteriler.aspx.designer.cs">
+      <DependentUpon>Musteriler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriSil.aspx.cs">
+      <DependentUpon>MusteriSil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MusteriSil.aspx.designer.cs">
+      <DependentUpon>MusteriSil.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

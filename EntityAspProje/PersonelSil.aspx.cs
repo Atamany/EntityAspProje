@@ -15,7 +15,7 @@ namespace EntityAspProje
             BonusAspDbEntities db = new BonusAspDbEntities();
             int x = Convert.ToInt32(Request.QueryString["PersonelId"]);
             var deger = db.Tbl_Personel.Find(x);
-            db.Tbl_Personel.Remove(deger);
+            deger.Durum = false;
             db.SaveChanges();
             Response.Redirect("Personeller.aspx");
         }

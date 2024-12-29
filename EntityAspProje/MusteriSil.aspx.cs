@@ -15,7 +15,7 @@ namespace EntityAspProje
             BonusAspDbEntities db = new BonusAspDbEntities();
             int x = Convert.ToInt32(Request.QueryString["MusteriId"]);
             var deger = db.Tbl_Musteri.Find(x);
-            db.Tbl_Musteri.Remove(deger);
+            deger.Durum = false;
             db.SaveChanges();
             Response.Redirect("Musteriler.aspx");
         }

@@ -4,13 +4,14 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="BonusAspDbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="BonusAspDbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Tbl_Kategori">
           <Key>
             <PropertyRef Name="KategoriId" />
           </Key>
           <Property Name="KategoriId" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="KategoriAd" Type="varchar" MaxLength="20" />
+          <Property Name="Durum" Type="bit" />
         </EntityType>
         <EntityType Name="Tbl_Musteri">
           <Key>
@@ -19,6 +20,7 @@
           <Property Name="MusteriId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="MusteriAd" Type="varchar" MaxLength="20" />
           <Property Name="MusteriSoyad" Type="varchar" MaxLength="20" />
+          <Property Name="Durum" Type="bit" />
         </EntityType>
         <EntityType Name="Tbl_Personel">
           <Key>
@@ -26,6 +28,7 @@
           </Key>
           <Property Name="PersonelId" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="PersonelAdSoyad" Type="varchar" MaxLength="50" />
+          <Property Name="Durum" Type="bit" />
         </EntityType>
         <EntityType Name="Tbl_Satis">
           <Key>
@@ -36,6 +39,7 @@
           <Property Name="Personel" Type="tinyint" />
           <Property Name="Musteri" Type="int" />
           <Property Name="Fiyat" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Durum" Type="bit" />
         </EntityType>
         <EntityType Name="Tbl_Urunler">
           <Key>
@@ -47,6 +51,7 @@
           <Property Name="UrunKategori" Type="tinyint" />
           <Property Name="UrunFiyat" Type="decimal" Precision="18" Scale="2" />
           <Property Name="UrunStok" Type="smallint" />
+          <Property Name="Durum" Type="bit" />
         </EntityType>
         <Association Name="FK_Tbl_Satis_Tbl_Musteri">
           <End Role="Tbl_Musteri" Type="Self.Tbl_Musteri" Multiplicity="0..1" />
@@ -119,8 +124,7 @@
             <End Role="Tbl_Urunler" EntitySet="Tbl_Urunler" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="BonusAspDbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -131,6 +135,7 @@
           <Property Name="KategoriId" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="KategoriAd" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="Tbl_Urunler" Relationship="Self.FK_Tbl_Urunler_Tbl_Kategori" FromRole="Tbl_Kategori" ToRole="Tbl_Urunler" />
+          <Property Name="Durum" Type="Boolean" />
         </EntityType>
         <EntityType Name="Tbl_Musteri">
           <Key>
@@ -140,6 +145,7 @@
           <Property Name="MusteriAd" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
           <Property Name="MusteriSoyad" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="Tbl_Satis" Relationship="Self.FK_Tbl_Satis_Tbl_Musteri" FromRole="Tbl_Musteri" ToRole="Tbl_Satis" />
+          <Property Name="Durum" Type="Boolean" />
         </EntityType>
         <EntityType Name="Tbl_Personel">
           <Key>
@@ -148,6 +154,7 @@
           <Property Name="PersonelId" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="PersonelAdSoyad" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="Tbl_Satis" Relationship="Self.FK_Tbl_Satis_Tbl_Personel" FromRole="Tbl_Personel" ToRole="Tbl_Satis" />
+          <Property Name="Durum" Type="Boolean" />
         </EntityType>
         <EntityType Name="Tbl_Satis">
           <Key>
@@ -161,6 +168,7 @@
           <NavigationProperty Name="Tbl_Musteri" Relationship="Self.FK_Tbl_Satis_Tbl_Musteri" FromRole="Tbl_Satis" ToRole="Tbl_Musteri" />
           <NavigationProperty Name="Tbl_Personel" Relationship="Self.FK_Tbl_Satis_Tbl_Personel" FromRole="Tbl_Satis" ToRole="Tbl_Personel" />
           <NavigationProperty Name="Tbl_Urunler" Relationship="Self.FK_Tbl_Satis_Tbl_Urunler" FromRole="Tbl_Satis" ToRole="Tbl_Urunler" />
+          <Property Name="Durum" Type="Boolean" />
         </EntityType>
         <EntityType Name="Tbl_Urunler">
           <Key>
@@ -174,6 +182,7 @@
           <Property Name="UrunStok" Type="Int16" />
           <NavigationProperty Name="Tbl_Kategori" Relationship="Self.FK_Tbl_Urunler_Tbl_Kategori" FromRole="Tbl_Urunler" ToRole="Tbl_Kategori" />
           <NavigationProperty Name="Tbl_Satis" Relationship="Self.FK_Tbl_Satis_Tbl_Urunler" FromRole="Tbl_Urunler" ToRole="Tbl_Satis" />
+          <Property Name="Durum" Type="Boolean" />
         </EntityType>
         <Association Name="FK_Tbl_Urunler_Tbl_Kategori">
           <End Role="Tbl_Kategori" Type="Self.Tbl_Kategori" Multiplicity="0..1" />
@@ -255,6 +264,7 @@
           <EntitySetMapping Name="Tbl_Kategori">
             <EntityTypeMapping TypeName="BonusAspDbModel.Tbl_Kategori">
               <MappingFragment StoreEntitySet="Tbl_Kategori">
+                <ScalarProperty Name="Durum" ColumnName="Durum" />
                 <ScalarProperty Name="KategoriId" ColumnName="KategoriId" />
                 <ScalarProperty Name="KategoriAd" ColumnName="KategoriAd" />
               </MappingFragment>
@@ -263,6 +273,7 @@
           <EntitySetMapping Name="Tbl_Musteri">
             <EntityTypeMapping TypeName="BonusAspDbModel.Tbl_Musteri">
               <MappingFragment StoreEntitySet="Tbl_Musteri">
+                <ScalarProperty Name="Durum" ColumnName="Durum" />
                 <ScalarProperty Name="MusteriId" ColumnName="MusteriId" />
                 <ScalarProperty Name="MusteriAd" ColumnName="MusteriAd" />
                 <ScalarProperty Name="MusteriSoyad" ColumnName="MusteriSoyad" />
@@ -272,6 +283,7 @@
           <EntitySetMapping Name="Tbl_Personel">
             <EntityTypeMapping TypeName="BonusAspDbModel.Tbl_Personel">
               <MappingFragment StoreEntitySet="Tbl_Personel">
+                <ScalarProperty Name="Durum" ColumnName="Durum" />
                 <ScalarProperty Name="PersonelId" ColumnName="PersonelId" />
                 <ScalarProperty Name="PersonelAdSoyad" ColumnName="PersonelAdSoyad" />
               </MappingFragment>
@@ -280,6 +292,7 @@
           <EntitySetMapping Name="Tbl_Satis">
             <EntityTypeMapping TypeName="BonusAspDbModel.Tbl_Satis">
               <MappingFragment StoreEntitySet="Tbl_Satis">
+                <ScalarProperty Name="Durum" ColumnName="Durum" />
                 <ScalarProperty Name="SatisId" ColumnName="SatisId" />
                 <ScalarProperty Name="Urun" ColumnName="Urun" />
                 <ScalarProperty Name="Personel" ColumnName="Personel" />
@@ -291,6 +304,7 @@
           <EntitySetMapping Name="Tbl_Urunler">
             <EntityTypeMapping TypeName="BonusAspDbModel.Tbl_Urunler">
               <MappingFragment StoreEntitySet="Tbl_Urunler">
+                <ScalarProperty Name="Durum" ColumnName="Durum" />
                 <ScalarProperty Name="UrunId" ColumnName="UrunId" />
                 <ScalarProperty Name="UrunAd" ColumnName="UrunAd" />
                 <ScalarProperty Name="UrunMarka" ColumnName="UrunMarka" />

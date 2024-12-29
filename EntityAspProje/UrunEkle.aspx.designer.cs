@@ -11,44 +11,53 @@ namespace EntityAspProje
 {
 
 
-    public partial class KategoriGuncelle
+    public partial class UrunEkle
     {
 
         /// <summary>
-        /// Label1 denetimi.
+        /// TxtUrunAd denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik olarak oluşturulan alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.TextBox TxtUrunAd;
 
         /// <summary>
-        /// TxtID denetimi.
+        /// TxtUrunMarka denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik olarak oluşturulan alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtID;
+        protected global::System.Web.UI.WebControls.TextBox TxtUrunMarka;
 
         /// <summary>
-        /// Label2 denetimi.
+        /// DDLKategori denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik olarak oluşturulan alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.DropDownList DDLKategori;
 
         /// <summary>
-        /// TxtAd denetimi.
+        /// TxtUrunFiyat denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik olarak oluşturulan alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtAd;
+        protected global::System.Web.UI.WebControls.TextBox TxtUrunFiyat;
+
+        /// <summary>
+        /// TxtUrunStok denetimi.
+        /// </summary>
+        /// <remarks>
+        /// Otomatik olarak oluşturulan alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TxtUrunStok;
 
         /// <summary>
         /// Button1 denetimi.

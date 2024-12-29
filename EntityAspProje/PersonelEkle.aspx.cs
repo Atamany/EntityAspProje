@@ -20,6 +20,7 @@ namespace EntityAspProje
             BonusAspDbEntities db = new BonusAspDbEntities();
             Tbl_Personel t = new Tbl_Personel();
             t.PersonelAdSoyad = TextBox1.Text;
+            t.Durum = true;
             db.Tbl_Personel.Add(t);
             db.SaveChanges();
             Response.Redirect("Personeller.aspx");

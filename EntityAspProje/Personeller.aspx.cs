@@ -13,7 +13,7 @@ namespace EntityAspProje
         BonusAspDbEntities db = new BonusAspDbEntities();
         protected void Page_Load(object sender, EventArgs e)
         {
-            var degerler = db.Tbl_Personel.ToList();
+            var degerler = db.Tbl_Personel.Where(x => x.Durum == true).ToList();
             Repeater1.DataSource = degerler;
             Repeater1.DataBind();
         }

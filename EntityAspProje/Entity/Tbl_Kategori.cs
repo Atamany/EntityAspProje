@@ -22,6 +22,7 @@ namespace EntityAspProje.Entity
     
         public byte KategoriId { get; set; }
         public string KategoriAd { get; set; }
+        public Nullable<bool> Durum { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Tbl_Urunler> Tbl_Urunler { get; set; }

@@ -20,6 +20,7 @@ namespace EntityAspProje
             BonusAspDbEntities db = new BonusAspDbEntities();
             Tbl_Kategori t = new Tbl_Kategori();
             t.KategoriAd = TextBox1.Text;
+            t.Durum = true;
             db.Tbl_Kategori.Add(t);
             db.SaveChanges();
             Response.Redirect("Kategoriler.aspx");

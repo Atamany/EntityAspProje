@@ -8,14 +8,16 @@ using EntityAspProje.Entity;
 
 namespace EntityAspProje
 {
-    public partial class Musteriler : System.Web.UI.Page
+    public partial class UrunSil : System.Web.UI.Page
     {
         BonusAspDbEntities db = new BonusAspDbEntities();
         protected void Page_Load(object sender, EventArgs e)
         {
-            var degerler = db.Tbl_Musteri.Where(x => x.Durum == true).ToList();
-            Repeater1.DataSource = degerler;
-            Repeater1.DataBind();
+            int id = Convert.ToInt32(Request.QueryString["UrunId"]);
+            var urun = db.Tbl_Urunler.Find(id);
+            urun.Durum = false;
+            db.SaveChanges();
+            Response.Redirect("Urunler.aspx");
         }
     }
 }

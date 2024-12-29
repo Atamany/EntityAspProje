@@ -11,7 +11,7 @@ namespace EntityAspProje
 {
 
 
-    public partial class MusteriGuncelle
+    public partial class UrunGuncelle
     {
 
         /// <summary>
@@ -24,13 +24,13 @@ namespace EntityAspProje
         protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
-        /// TxtID denetimi.
+        /// TxtUrunId denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik olarak oluşturulan alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtID;
+        protected global::System.Web.UI.WebControls.TextBox TxtUrunId;
 
         /// <summary>
         /// Label2 denetimi.
@@ -42,13 +42,13 @@ namespace EntityAspProje
         protected global::System.Web.UI.WebControls.Label Label2;
 
         /// <summary>
-        /// TxtAd denetimi.
+        /// TxtUrunAd denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik olarak oluşturulan alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtAd;
+        protected global::System.Web.UI.WebControls.TextBox TxtUrunAd;
 
         /// <summary>
         /// Label3 denetimi.
@@ -60,13 +60,67 @@ namespace EntityAspProje
         protected global::System.Web.UI.WebControls.Label Label3;
 
         /// <summary>
-        /// TxtSoyad denetimi.
+        /// TxtUrunMarka denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik olarak oluşturulan alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtSoyad;
+        protected global::System.Web.UI.WebControls.TextBox TxtUrunMarka;
+
+        /// <summary>
+        /// Label4 denetimi.
+        /// </summary>
+        /// <remarks>
+        /// Otomatik olarak oluşturulan alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label4;
+
+        /// <summary>
+        /// DDLKategori denetimi.
+        /// </summary>
+        /// <remarks>
+        /// Otomatik olarak oluşturulan alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DDLKategori;
+
+        /// <summary>
+        /// Label5 denetimi.
+        /// </summary>
+        /// <remarks>
+        /// Otomatik olarak oluşturulan alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label5;
+
+        /// <summary>
+        /// TxtUrunFiyat denetimi.
+        /// </summary>
+        /// <remarks>
+        /// Otomatik olarak oluşturulan alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TxtUrunFiyat;
+
+        /// <summary>
+        /// Label6 denetimi.
+        /// </summary>
+        /// <remarks>
+        /// Otomatik olarak oluşturulan alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label6;
+
+        /// <summary>
+        /// TxtUrunStok denetimi.
+        /// </summary>
+        /// <remarks>
+        /// Otomatik olarak oluşturulan alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TxtUrunStok;
 
         /// <summary>
         /// Button1 denetimi.

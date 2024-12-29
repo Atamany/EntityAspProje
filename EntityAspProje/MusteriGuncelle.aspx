@@ -6,14 +6,17 @@
     <form runat="server" class="form-group">
 
         <div>
+            <asp:Label ID="Label1" runat="server" Text="ID"></asp:Label>
             <asp:TextBox ID="TxtID" runat="server" CssClass="form-control" Enabled="false"></asp:TextBox>
         </div>
         <br />
         <div>
+            <asp:Label ID="Label2" runat="server" Text="Ad"></asp:Label>
             <asp:TextBox ID="TxtAd" runat="server" placeholder="Ad:" CssClass="form-control"></asp:TextBox>
         </div>
         <br />
         <div>
+            <asp:Label ID="Label3" runat="server" Text="Soyad"></asp:Label>
             <asp:TextBox ID="TxtSoyad" runat="server" placeholder="Soyad:" CssClass="form-control"></asp:TextBox>
         </div>
         <br />

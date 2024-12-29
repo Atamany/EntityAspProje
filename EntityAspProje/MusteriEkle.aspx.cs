@@ -21,6 +21,7 @@ namespace EntityAspProje
             Tbl_Musteri t = new Tbl_Musteri();
             t.MusteriAd = TextBox1.Text;
             t.MusteriSoyad = TextBox2.Text;
+            t.Durum = true;
             db.Tbl_Musteri.Add(t);
             db.SaveChanges();
             Response.Redirect("Musteriler.aspx");

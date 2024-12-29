@@ -22,6 +22,7 @@ namespace EntityAspProje.Entity
     
         public byte PersonelId { get; set; }
         public string PersonelAdSoyad { get; set; }
+        public Nullable<bool> Durum { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Tbl_Satis> Tbl_Satis { get; set; }

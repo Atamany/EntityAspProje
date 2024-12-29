@@ -15,7 +15,7 @@ namespace EntityAspProje
             BonusAspDbEntities db = new BonusAspDbEntities();
             int x= Convert.ToInt32(Request.QueryString["KategoriId"]);
             var deger = db.Tbl_Kategori.Find(x);
-            db.Tbl_Kategori.Remove(deger);
+            deger.Durum = false;
             db.SaveChanges();
             Response.Redirect("Kategoriler.aspx");
         }

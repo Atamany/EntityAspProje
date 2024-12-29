@@ -6,10 +6,12 @@
     <form runat="server" class="form-group">
 
         <div>
+            <asp:Label ID="Label1" runat="server" Text="ID"></asp:Label>
             <asp:TextBox ID="TxtID" runat="server" CssClass="form-control" Enabled="false"></asp:TextBox>
         </div>
         <br />
         <div>
+            <asp:Label ID="Label2" runat="server" Text="Ad - Soyad"></asp:Label>
             <asp:TextBox ID="TxtAdSoyad" runat="server" placeholder="Ad - Soyad:" CssClass="form-control"></asp:TextBox>
         </div>
         <br />

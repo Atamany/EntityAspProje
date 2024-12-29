@@ -97,6 +97,10 @@
     <Content Include="PersonelGuncelle.aspx" />
     <Content Include="Personeller.aspx" />
     <Content Include="PersonelSil.aspx" />
+    <Content Include="UrunEkle.aspx" />
+    <Content Include="UrunGuncelle.aspx" />
+    <Content Include="Urunler.aspx" />
+    <Content Include="UrunSil.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -222,6 +226,34 @@
       <DependentUpon>PersonelSil.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UrunEkle.aspx.cs">
+      <DependentUpon>UrunEkle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UrunEkle.aspx.designer.cs">
+      <DependentUpon>UrunEkle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UrunGuncelle.aspx.cs">
+      <DependentUpon>UrunGuncelle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UrunGuncelle.aspx.designer.cs">
+      <DependentUpon>UrunGuncelle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Urunler.aspx.cs">
+      <DependentUpon>Urunler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Urunler.aspx.designer.cs">
+      <DependentUpon>Urunler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UrunSil.aspx.cs">
+      <DependentUpon>UrunSil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UrunSil.aspx.designer.cs">
+      <DependentUpon>UrunSil.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin.Master" />

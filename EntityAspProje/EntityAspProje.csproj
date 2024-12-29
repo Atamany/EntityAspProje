@@ -89,6 +89,15 @@
     <Content Include="KategoriGuncelle.aspx" />
     <Content Include="Kategoriler.aspx" />
     <Content Include="KategoriSil.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Login\css\fontawesome-all.css" />
+    <Content Include="Login\css\style.css" />
+    <Content Include="Login\images\cover4.jpg" />
+    <Content Include="Login\index.html" />
+    <Content Include="Login\w3layouts-License.txt" />
+    <Content Include="Login\webfonts\fa-brands-400.svg" />
+    <Content Include="Login\webfonts\fa-regular-400.svg" />
+    <Content Include="Login\webfonts\fa-solid-900.svg" />
     <Content Include="MusteriEkle.aspx" />
     <Content Include="MusteriGuncelle.aspx" />
     <Content Include="Musteriler.aspx" />
@@ -127,6 +136,9 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\Tbl_Admin.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Entity\Tbl_Kategori.cs">
       <DependentUpon>Model1.tt</DependentUpon>
@@ -170,6 +182,13 @@
     </Compile>
     <Compile Include="KategoriSil.aspx.designer.cs">
       <DependentUpon>KategoriSil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="MusteriEkle.aspx.cs">
       <DependentUpon>MusteriEkle.aspx</DependentUpon>
@@ -280,6 +299,18 @@
     <Content Include="Entity\Model1.edmx.diagram">
       <DependentUpon>Model1.edmx</DependentUpon>
     </Content>
+    <Content Include="Login\webfonts\fa-brands-400.eot" />
+    <Content Include="Login\webfonts\fa-brands-400.ttf" />
+    <Content Include="Login\webfonts\fa-brands-400.woff" />
+    <Content Include="Login\webfonts\fa-brands-400.woff2" />
+    <Content Include="Login\webfonts\fa-regular-400.eot" />
+    <Content Include="Login\webfonts\fa-regular-400.ttf" />
+    <Content Include="Login\webfonts\fa-regular-400.woff" />
+    <Content Include="Login\webfonts\fa-regular-400.woff2" />
+    <Content Include="Login\webfonts\fa-solid-900.eot" />
+    <Content Include="Login\webfonts\fa-solid-900.ttf" />
+    <Content Include="Login\webfonts\fa-solid-900.woff" />
+    <Content Include="Login\webfonts\fa-solid-900.woff2" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

@@ -14,6 +14,7 @@
         <AssociationConnector Association="BonusAspDbModel.FK_Tbl_Satis_Tbl_Musteri" ManuallyRouted="false" />
         <AssociationConnector Association="BonusAspDbModel.FK_Tbl_Satis_Tbl_Personel" ManuallyRouted="false" />
         <AssociationConnector Association="BonusAspDbModel.FK_Tbl_Satis_Tbl_Urunler" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="BonusAspDbModel.Tbl_Admin" Width="1.5" PointX="7.375" PointY="0.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

@@ -93,6 +93,10 @@
     <Content Include="MusteriGuncelle.aspx" />
     <Content Include="Musteriler.aspx" />
     <Content Include="MusteriSil.aspx" />
+    <Content Include="PersonelEkle.aspx" />
+    <Content Include="PersonelGuncelle.aspx" />
+    <Content Include="Personeller.aspx" />
+    <Content Include="PersonelSil.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -188,6 +192,34 @@
     </Compile>
     <Compile Include="MusteriSil.aspx.designer.cs">
       <DependentUpon>MusteriSil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelEkle.aspx.cs">
+      <DependentUpon>PersonelEkle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PersonelEkle.aspx.designer.cs">
+      <DependentUpon>PersonelEkle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelGuncelle.aspx.cs">
+      <DependentUpon>PersonelGuncelle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PersonelGuncelle.aspx.designer.cs">
+      <DependentUpon>PersonelGuncelle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Personeller.aspx.cs">
+      <DependentUpon>Personeller.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Personeller.aspx.designer.cs">
+      <DependentUpon>Personeller.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelSil.aspx.cs">
+      <DependentUpon>PersonelSil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PersonelSil.aspx.designer.cs">
+      <DependentUpon>PersonelSil.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

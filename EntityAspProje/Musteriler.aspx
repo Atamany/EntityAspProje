@@ -5,9 +5,9 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
     <table class="table table-bordered">
         <tr>
-            <th>Müşteri ID</th>
-            <th>Müşteri Adı</th>
-            <th>Müşteri Soyadı</th>
+            <th>ID</th>
+            <th>Ad</th>
+            <th>Soyad</th>
             <th>İşlemler</th>
         </tr>
         <asp:Repeater ID="Repeater1" runat="server">

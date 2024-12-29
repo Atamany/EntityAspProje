@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using EntityAspProje.Entity;
@@ -23,6 +24,8 @@ namespace EntityAspProje
             var sorgu = from x in db.Tbl_Admin where x.Kullanici == TxtKullanici.Text && x.Sifre == TxtSifre.Text select x;
             if (sorgu.Any())
             {
+                Session.Add("Numara", TxtKullanici.Text);
+                FormsAuthentication.SetAuthCookie(TxtKullanici.Text, false);
                 Response.Redirect("Kategoriler.aspx");
             }
             else

@@ -1,5 +1,6 @@
 <h1> 🚀 Entity ASP (Satış Takip Uygulaması) </h1>
 <h3>-ASP.NET MVC ile hazırlanmış, Admin paneli olan, Entity'nin temellerine yönelik basit seviye bir Satış Takip Uygulaması</h3>
+<p> 🏷️ Murat Yücedağ tarafından Udemy eğitim platformunda yayınlanan "Asp.Net Bootstrap ile SQL Tabanlı Web Projeleri Geliştirin!" eğitimi kapsamında tamamladığım 2. proje.</p>
 <br />
 
 <h4>Giriş Ekranı</h4>
